@@ -1,105 +1,257 @@
+body {
+    /* Estilos para el cuerpo de la página */
+    font-family: Arial, sans-serif;
+    /* Define la fuente general */
+    margin: 0;
+    /* Elimina los márgenes predeterminados */
+    padding: 0;
+    /* Elimina el relleno predeterminado */
+    background-color: #f3f3f3;
+    /* Establece un color de fondo gris claro */
+    display: flex;
+    /* Usa el modelo de caja flexible para el cuerpo */
+    flex-direction: column;
+    /* Organiza los elementos en una columna */
+}
 
-body { /* Estilos para el cuerpo de la página */
-    font-family: Arial, sans-serif; /* Define la fuente general */
-    margin: 0; /* Elimina los márgenes predeterminados */
-    padding: 0; /* Elimina el relleno predeterminado */
-    background-color: #f3f3f3; /* Establece un color de fondo gris claro */
-    display: flex; /* Usa el modelo de caja flexible para el cuerpo */
-    flex-direction: column; /* Organiza los elementos en una columna */
+.navbar {
+    /* Estilo para la barra de navegación */
+    width: 100%;
+    /* Ancho completo de la página */
+    display: flex;
+    /* Modelo de caja flexible para la barra */
+    justify-content: space-around;
+    /* Espaciado entre los elementos */
+    align-items: center;
+    /* Alinea los elementos verticalmente al centro */
+    background-color: #232f3e;
+    /* Color de fondo oscuro para la barra */
+    color: white;
+    /* Color de texto blanco */
+    padding: 15px 20px;
+    /* Espaciado interno de 15px arriba/abajo y 20px izquierda/derecha */
 }
-.navbar { /* Estilo para la barra de navegación */
-    width: 100%; /* Ancho completo de la página */
-    display: flex; /* Modelo de caja flexible para la barra */
-    justify-content: space-around; /* Espaciado entre los elementos */
-    align-items: center; /* Alinea los elementos verticalmente al centro */
-    background-color: #232f3e; /* Color de fondo oscuro para la barra */
-    color: white; /* Color de texto blanco */
-    padding: 15px 20px; /* Espaciado interno de 15px arriba/abajo y 20px izquierda/derecha */
+
+.search-bar {
+    /* Estilo para la barra de búsqueda */
+    flex-grow: 1;
+    /* Ocupa el espacio restante disponible */
+    margin: 0 15px;
+    /* Margen a la izquierda y derecha */
+    padding: 8px;
+    /* Relleno interno */
+    border: none;
+    /* Elimina el borde */
+    border-radius: 4px;
+    /* Bordes redondeados */
 }
-.search-bar { /* Estilo para la barra de búsqueda */
-    flex-grow: 1; /* Ocupa el espacio restante disponible */
-    margin: 0 15px; /* Margen a la izquierda y derecha */
-    padding: 8px; /* Relleno interno */
-    border: none; /* Elimina el borde */
-    border-radius: 4px; /* Bordes redondeados */
+
+.menu {
+    /* Estilo para el menú de navegación */
+    width: 100%;
+    /* Ancho completo de la página */
+    display: flex;
+    /* Modelo de caja flexible */
+    background-color: #37475a;
+    /* Color de fondo gris oscuro */
+    padding: 10px;
+    /* Espaciado interno */
+    color: white;
+    /* Color de texto blanco */
+    justify-content: space-around;
+    /* Distribuye los elementos de manera equitativa */
 }
-.menu { /* Estilo para el menú de navegación */
-    width: 100%; /* Ancho completo de la página */
-    display: flex; /* Modelo de caja flexible */
-    background-color: #37475a; /* Color de fondo gris oscuro */
-    padding: 10px; /* Espaciado interno */
-    color: white; /* Color de texto blanco */
-    justify-content: space-around; /* Distribuye los elementos de manera equitativa */
+
+.container {
+    /* Contenedor principal de contenido */
+    display: grid;
+    /* Usa el modelo de rejilla (grid) */
+    grid-template-columns: 2fr 1fr;
+    /* Define dos columnas: una de 2/3 del espacio y otra de 1/3 */
+    gap: 20px;
+    /* Espaciado entre los elementos de la rejilla */
+    max-width: 1000px;
+    /* Ancho máximo de 1000px */
+    margin: 20px;
+    /* Margen alrededor del contenedor */
+    background: white;
+    /* Fondo blanco */
+    padding: 20px;
+    /* Relleno interno */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
-.container { /* Contenedor principal de contenido */
-    display: grid; /* Usa el modelo de rejilla (grid) */
-    grid-template-columns: 2fr 1fr; /* Define dos columnas: una de 2/3 del espacio y otra de 1/3 */
-    gap: 20px; /* Espaciado entre los elementos de la rejilla */
-    max-width: 1000px; /* Ancho máximo de 1000px */
-    margin: 20px; /* Margen alrededor del contenedor */
-    background: white; /* Fondo blanco */
-    padding: 20px; /* Relleno interno */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+.profile-container {
+    /* Contenedor del perfil profesional */
+    margin: 20px auto;
+    /* Márgenes automáticos para centrar */
+    background: white;
+    /* Fondo blanco */
+    padding: 20px;
+    /* Relleno interno */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
-.profile-container { /* Contenedor del perfil profesional */
-    margin: 20px auto; /* Márgenes automáticos para centrar */
-    background: white; /* Fondo blanco */
-    padding: 20px; /* Relleno interno */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+.section {
+    /* Sección con estilo común */
+    display: flex;
+    /* Caja flexible */
+    margin-bottom: 20px;
+    /* Margen inferior */
+    margin-top: 20px;
+    /* Margen superior */
+    flex-direction: column;
+    /* Elementos en columna */
+    justify-content: space-between;
+    /* Distribuye los elementos */
 }
-.section { /* Sección con estilo común */
-    display: flex; /* Caja flexible */
-    margin-bottom: 20px; /* Margen inferior */
-    margin-top: 20px; /* Margen superior */
-    flex-direction: column; /* Elementos en columna */
-    justify-content: space-between; /* Distribuye los elementos */
+
+.title {
+    /* Estilo para los títulos */
+    font-weight: bold;
+    /* Texto en negrita */
+    font-size: 18px;
+    /* Tamaño de fuente 18px */
 }
-.title { /* Estilo para los títulos */
-    font-weight: bold; /* Texto en negrita */
-    font-size: 18px; /* Tamaño de fuente 18px */
+
+.profile-img {
+    /* Estilo para la imagen de perfil */
+    float: left;
+    /* Permite que el texto fluya a su alrededor */
+    margin-right: 10px;
+    /* Espaciado a la derecha */
+    border-radius: 50%;
+    /* Hace la imagen circular */
+    width: 300px;
+    /* Ancho de 300px */
+    height: 300px;
+    /* Altura de 300px */
 }
-.profile-img { /* Estilo para la imagen de perfil */
-    float: left; /* Permite que el texto fluya a su alrededor */
-    margin-right: 10px; /* Espaciado a la derecha */
-    border-radius: 50%; /* Hace la imagen circular */
-    width: 300px; /* Ancho de 300px */
-    height: 300px; /* Altura de 300px */
+
+.details,
+.skills,
+.description {
+    /* Estilo común para detalles, habilidades y descripción */
+    padding: 10px;
+    /* Relleno interno */
+    border: 1px solid #ccc;
+    /* Borde de color gris claro */
+    background-color: #f9f9f9;
+    /* Fondo gris claro */
 }
-.details, .skills, .description { /* Estilo común para detalles, habilidades y descripción */
-    padding: 10px; /* Relleno interno */
-    border: 1px solid #ccc; /* Borde de color gris claro */
-    background-color: #f9f9f9; /* Fondo gris claro */
+
+footer {
+    /* Estilo para el pie de página */
+    margin-top: 20px;
+    /* Margen superior */
+    padding: 10px;
+    /* Relleno interno */
+    text-align: center;
+    /* Centra el texto */
+    width: 100%;
+    /* Ancho completo */
+    background-color: #ddd;
+    /* Fondo gris claro */
 }
-footer { /* Estilo para el pie de página */
-    margin-top: 20px; /* Margen superior */
-    padding: 10px; /* Relleno interno */
-    text-align: center; /* Centra el texto */
-    width: 100%; /* Ancho completo */
-    background-color: #ddd; /* Fondo gris claro */
+
+.banner {
+    /* Estilo para el banner principal */
+    text-align: center;
+    /* Centra el texto */
+    background-color: #d4e9e2;
+    /* Fondo verde claro */
+    padding: 50px;
+    /* Relleno interno de 50px */
+    font-size: 50px;
+    /* Tamaño de fuente 24px */
+    font-weight: bold;
+    /* Texto en negrita */
 }
-.banner { /* Estilo para el banner principal */
-    text-align: center; /* Centra el texto */
-    background-color: #d4e9e2; /* Fondo verde claro */
-    padding: 50px; /* Relleno interno de 50px */
-    font-size: 24px; /* Tamaño de fuente 24px */
-    font-weight: bold; /* Texto en negrita */
+
+.ofertas {
+    /* Contenedor de las ofertas */
+    display: grid;
+    /* Usa el modelo de rejilla */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Columnas automáticas que se ajustan al tamaño */
+    gap: 10px;
+    /* Espaciado entre los elementos */
+    padding: 20px;
+    /* Relleno interno */
 }
-.ofertas { /* Contenedor de las ofertas */
-    display: grid; /* Usa el modelo de rejilla */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas automáticas que se ajustan al tamaño */
-    gap: 10px; /* Espaciado entre los elementos */
-    padding: 20px; /* Relleno interno */
+
+.oferta {
+    /* Estilo para cada oferta */
+    background: white;
+    /* Fondo blanco */
+    padding: 20px;
+    /* Relleno interno */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    text-align: center;
+    /* Centra el texto */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
 }
-.oferta { /* Estilo para cada oferta */
-    background: white; /* Fondo blanco */
-    padding: 20px; /* Relleno interno */
-    border-radius: 8px; /* Bordes redondeados */
-    text-align: center; /* Centra el texto */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+
+.logo {
+    /* Estilo para el logo */
+    height: 100px;
+    /* Altura de 100px */
+    width: 100px;
+    /* Ancho de 100px */
 }
-.logo{ /* Estilo para el logo */
-    height: 100px; /* Altura de 100px */
-    width: 100px; /* Ancho de 100px */
+
+.professional-experience {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 100%;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #D58512;
+}
+
+.stars {
+    color: #FFA500;
+    font-size: 18px;
+}
+
+.reviews {
+    font-size: 14px;
+    color: #333;
+}
+
+.bar-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.bar {
+    height: 10px;
+    background-color: #FFA500;
+    margin-left: 10px;
+}
+
+.review {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.reviewer {
+    font-weight: bold;
+    font-size: 12px;
+    color: #0073aa;
 }
