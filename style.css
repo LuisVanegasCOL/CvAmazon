@@ -1,213 +1,202 @@
+/* ==========================
+   ESTILOS GENERALES
+   ========================== */
 body {
-    /* Estilos para el cuerpo de la página */
     font-family: Arial, sans-serif;
-    /* Define la fuente general */
     margin: 0;
-    /* Elimina los márgenes predeterminados */
     padding: 0;
-    /* Elimina el relleno predeterminado */
-    background-color: #f3f3f3;
-    /* Establece un color de fondo gris claro */
+    background-color: white;
     display: flex;
-    /* Usa el modelo de caja flexible para el cuerpo */
     flex-direction: column;
-    /* Organiza los elementos en una columna */
 }
 
+/* ==========================
+   NAVBAR
+   ========================== */
 .navbar {
-    /* Estilo para la barra de navegación */
-    width: 100%;
-    /* Ancho completo de la página */
     display: flex;
-    /* Modelo de caja flexible para la barra */
-    justify-content: space-around;
-    /* Espaciado entre los elementos */
-    align-items: center;
-    /* Alinea los elementos verticalmente al centro */
-    background-color: #232f3e;
-    /* Color de fondo oscuro para la barra */
-    color: white;
-    /* Color de texto blanco */
-    padding: 15px 20px;
-    /* Espaciado interno de 15px arriba/abajo y 20px izquierda/derecha */
-}
-
-.search-bar {
-    /* Estilo para la barra de búsqueda */
-    flex-grow: 1;
-    /* Ocupa el espacio restante disponible */
-    margin: 0 15px;
-    /* Margen a la izquierda y derecha */
-    padding: 8px;
-    /* Relleno interno */
-    border: none;
-    /* Elimina el borde */
-    border-radius: 4px;
-    /* Bordes redondeados */
-}
-
-.menu {
-    /* Estilo para el menú de navegación */
-    width: 100%;
-    /* Ancho completo de la página */
-    display: flex;
-    /* Modelo de caja flexible */
-    background-color: #37475a;
-    /* Color de fondo gris oscuro */
-    padding: 10px;
-    /* Espaciado interno */
-    color: white;
-    /* Color de texto blanco */
-    justify-content: space-around;
-    /* Distribuye los elementos de manera equitativa */
-}
-
-.container {
-    /* Contenedor principal de contenido */
-    display: grid;
-    /* Usa el modelo de rejilla (grid) */
-    grid-template-columns: 2fr 1fr;
-    /* Define dos columnas: una de 2/3 del espacio y otra de 1/3 */
-    gap: 20px;
-    /* Espaciado entre los elementos de la rejilla */
-    max-width: 1000px;
-    /* Ancho máximo de 1000px */
-    margin: 20px;
-    /* Margen alrededor del contenedor */
-    background: white;
-    /* Fondo blanco */
-    padding: 20px;
-    /* Relleno interno */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
-}
-
-.profile-container {
-    /* Contenedor del perfil profesional */
-    margin: 20px auto;
-    /* Márgenes automáticos para centrar */
-    background: white;
-    /* Fondo blanco */
-    padding: 20px;
-    /* Relleno interno */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
-}
-
-.section {
-    /* Sección con estilo común */
-    display: flex;
-    /* Caja flexible */
-    margin-bottom: 20px;
-    /* Margen inferior */
-    margin-top: 20px;
-    /* Margen superior */
-    flex-direction: column;
-    /* Elementos en columna */
     justify-content: space-between;
-    /* Distribuye los elementos */
+    align-items: center;
 }
 
-.title {
-    /* Estilo para los títulos */
-    font-weight: bold;
-    /* Texto en negrita */
-    font-size: 18px;
-    /* Tamaño de fuente 18px */
-}
-
-.profile-img {
-    /* Estilo para la imagen de perfil */
-    float: left;
-    /* Permite que el texto fluya a su alrededor */
-    margin-right: 10px;
-    /* Espaciado a la derecha */
-    border-radius: 50%;
-    /* Hace la imagen circular */
-    width: 300px;
-    /* Ancho de 300px */
-    height: 300px;
-    /* Altura de 300px */
-}
-
-.details,
-.skills,
-.description {
-    /* Estilo común para detalles, habilidades y descripción */
-    padding: 10px;
-    /* Relleno interno */
-    border: 1px solid #ccc;
-    /* Borde de color gris claro */
-    background-color: #f9f9f9;
-    /* Fondo gris claro */
-}
-
-footer {
-    /* Estilo para el pie de página */
-    margin-top: 20px;
-    /* Margen superior */
-    padding: 10px;
-    /* Relleno interno */
-    text-align: center;
-    /* Centra el texto */
-    width: 100%;
-    /* Ancho completo */
-    background-color: #ddd;
-    /* Fondo gris claro */
-}
-
-.banner {
-    /* Estilo para el banner principal */
-    text-align: center;
-    /* Centra el texto */
-    background-color: #d4e9e2;
-    /* Fondo verde claro */
-    padding: 50px;
-    /* Relleno interno de 50px */
-    font-size: 50px;
-    /* Tamaño de fuente 24px */
-    font-weight: bold;
-    /* Texto en negrita */
-}
-
-.ofertas {
-    /* Contenedor de las ofertas */
-    display: grid;
-    /* Usa el modelo de rejilla */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* Columnas automáticas que se ajustan al tamaño */
-    gap: 10px;
-    /* Espaciado entre los elementos */
-    padding: 20px;
-    /* Relleno interno */
-}
-
-.oferta {
-    /* Estilo para cada oferta */
-    background: white;
-    /* Fondo blanco */
-    padding: 20px;
-    /* Relleno interno */
-    border-radius: 8px;
-    /* Bordes redondeados */
-    text-align: center;
-    /* Centra el texto */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    /* Sombra suave */
+.left-section,
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .logo {
-    /* Estilo para el logo */
-    height: 100px;
-    /* Altura de 100px */
-    width: 100px;
-    /* Ancho de 100px */
+    width: 75px;
 }
 
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart span {
+    margin-left: 5px;
+}
+
+/* ==========================
+   BARRA DE BÚSQUEDA
+   ========================== */
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 15px;
+    padding: 8px;
+    border: solid 1px black;
+    border-radius: 4px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ==========================
+   MENÚ SECUNDARIO
+   ========================== */
+.menu2 {
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+/* ==========================
+   CONTENEDOR PRINCIPAL
+   ========================== */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================
+   PERFIL
+   ========================== */
+.todo-perfil {
+    display: flex;
+    align-items: center;
+    border: solid 3px red;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto-perfil {
+    border: solid 3px rgb(255, 0, 140);
+    align-self: flex-start;
+}
+
+.text-perfil {
+    border: solid 3px rgb(54, 219, 4);
+    align-self: flex-end;
+}
+
+.profile-container {
+    border: solid 2px black;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================
+   SECCIONES Y TITULOS
+   ========================== */
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #D58512;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #D58512;
+}
+
+/* ==========================
+   IMÁGENES DE PERFIL
+   ========================== */
+.profile-img {
+    margin-right: 50px;
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+}
+
+/* ==========================
+   DETALLES, HABILIDADES Y DESCRIPCIÓN
+   ========================== */
+.details,
+.skills,
+.description {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* ==========================
+   PIE DE PÁGINA
+   ========================== */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #ddd;
+}
+
+/* ==========================
+   OFERTAS
+   ========================== */
+.ofertas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.oferta {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================
+   EXPERIENCIA PROFESIONAL
+   ========================== */
 .professional-experience {
     font-family: Arial, sans-serif;
     border: 1px solid #ddd;
@@ -215,12 +204,6 @@ footer {
     max-width: 100%;
     background-color: #fff;
     margin-top: 20px;
-}
-
-.title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #D58512;
 }
 
 .stars {
@@ -254,4 +237,61 @@ footer {
     font-weight: bold;
     font-size: 12px;
     color: #0073aa;
+}
+
+/* ==========================
+   SECCIÓN MEDIA
+   ========================== */
+.medio {
+    display: flex;
+    width: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.image-section img {
+    width: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.main-image {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.info-section-medio {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.right-section-medio {
+    width: 200px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    background: #f0c14b;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
 }

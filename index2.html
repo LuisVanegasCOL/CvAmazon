@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippe Dubost - Web Product Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .medio {
+            display: flex;
+            width: 900px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .image-section {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .image-section img {
+            width: 50px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+        .main-image {
+            width: 200px;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+        .info-section-medio {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .right-section-medio {
+            width: 200px;
+            text-align: center;
+            border-left: 1px solid #ddd;
+            padding-left: 10px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            margin: 5px 0;
+            padding: 10px;
+            border: none;
+            background: #f0c14b;
+            cursor: pointer;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="medio">
+        <div class="image-section">
+            <img src="./perfil.jpg" onclick="document.getElementById('mainImage').src='thumb1.jpg'">
+            <img src="./perfil.jpg" onclick="document.getElementById('mainImage').src='thumb2.jpg'">
+            <img src="./perfil.jpg" onclick="document.getElementById('mainImage').src='thumb3.jpg'">
+            <img src="./perfil.jpg" onclick="document.getElementById('mainImage').src='thumb4.jpg'">
+        </div>
+        <div class="info-section-medio">
+            <img id="mainImage" class="main-image" src="./perfil.jpg">
+            <h2>Philippe Dubost, Web Product Manager</h2>
+            <p>⭐⭐⭐⭐⭐ (5 previous positions)</p>
+            <p><strong>Currently unavailable.</strong> We don't know when or if this item will be back in stock.</p>
+            <ul>
+                <li>Dual competence: technical-management</li>
+                <li>5+ years working on web products</li>
+                <li>Entrepreneurial mindset</li>
+                <li>"Strong Generalist"</li>
+                <li>Trilingual EN/FR/ES</li>
+            </ul>
+            <p><a href="#">Take a Trip with Philippe</a></p>
+        </div>
+        <div class="right-section-medio">
+            <p><strong>Have one to sell?</strong></p>
+            <button class="button">Add to Wish List</button>
+            <button class="button">Add to Wedding Registry</button>
+            <div class="social-icons-medio">
+                <span>🔗 LinkedIn</span>
+                <span>📧 Email</span>
+                <span>🔵 Facebook</span>
+                <span>🔵 Facebook</span>
+                <span>🐦 Twitter</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
